@@ -17,9 +17,9 @@ def genre
   @genre
 end
 
-if genre = nil
-  self.genre = genre
-
+def genre=(genre)
+  @genre = genre
+  genre.add_song(self)
 def artist
   @artist
 end
