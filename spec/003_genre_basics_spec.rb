@@ -8,7 +8,7 @@ attr_accessor :name, :songs
   def initialize(name)
     @name = name
     @song = []
-    
+
     save
   end
 
@@ -27,7 +27,7 @@ attr_accessor :name, :songs
   def self.create(genre_name)
     self.new(genre_name)
   end
-end 
+end
 
 
 
