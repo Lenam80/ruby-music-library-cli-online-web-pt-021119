@@ -13,6 +13,9 @@ def initialize(name, artist = nil, genre = nil)
   save
 end
 
+if genre = nil
+  self.genre = genre 
+
 def artist
   @artist
 end
