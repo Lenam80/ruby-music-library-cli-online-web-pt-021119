@@ -13,6 +13,10 @@ def initialize(name, artist = nil, genre = nil)
   save
 end
 
+def genre
+  @genre
+end
+
 if genre = nil
   self.genre = genre 
 
@@ -24,6 +28,7 @@ def artist=(artist)
   @artist = artist
   artist.add_song(self)
 end
+
 
 def save
   @@all << self
