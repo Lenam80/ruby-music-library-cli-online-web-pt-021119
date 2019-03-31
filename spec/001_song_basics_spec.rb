@@ -1,12 +1,12 @@
 require "spec_helper"
 
 class Song
-attr_accessor = :name
+attr_accessor = :name, 
 
 @@all = []
 
 
-def initialize(name, artist = nil)
+def initialize(name, artist = nil, genre = nil)
   @name = name
   if artist = nil
     self.artist = artist
