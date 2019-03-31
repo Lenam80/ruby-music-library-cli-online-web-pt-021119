@@ -2,11 +2,13 @@ require "spec_helper"
 
 class Genre
 
-attr_accessor :name
+attr_accessor :name, :songs
   @@all = []
 
   def initialize(name)
     @name = name
+    @song = []
+    
     save
   end
 
