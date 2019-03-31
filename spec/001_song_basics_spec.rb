@@ -18,7 +18,7 @@ def genre
 end
 
 if genre = nil
-  self.genre = genre 
+  self.genre = genre
 
 def artist
   @artist
